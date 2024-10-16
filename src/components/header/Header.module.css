@@ -1,0 +1,26 @@
+.header {
+    padding: 1.2rem;
+    background-color: var(--header-light); 
+
+    display: grid;
+    gap: 1.2rem;
+}
+
+.logo {
+    width: 5rem;
+    background-color: var(--section);
+    border-radius: 5rem;
+    font-size: 2rem;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.search {
+    border: 0;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 1px solid var(--stroke-light);
+}
