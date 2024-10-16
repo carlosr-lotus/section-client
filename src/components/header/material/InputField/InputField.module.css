@@ -1,0 +1,31 @@
+.container {
+    position: relative;
+}
+
+.container > svg {
+    position: absolute;
+    top: 25%;
+    left: 1.2rem;
+}
+
+.inputFieldBorderAround {
+    width: 100%;
+    padding: 1.5rem;
+    padding-left: 4rem;
+
+    border: none;
+    border-bottom: 1px solid var(--background-delphi);
+
+    font-size: 1.3rem;
+    transition: 0.2s;
+}
+
+.inputFieldBorderAround {
+    border-radius: 1rem;
+    border: 1px solid var(--stroke-light);
+}
+
+/* .inputFieldBorderAround:focus {
+    outline: none;
+    border: 1px solid var(--color-focus);
+} */
