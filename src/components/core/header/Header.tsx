@@ -1,4 +1,4 @@
-import InputField from "./material/InputField/InputField";
+import InputField from "@/components/material/InputField/InputField";
 
 import styles from "./Header.module.css";
 

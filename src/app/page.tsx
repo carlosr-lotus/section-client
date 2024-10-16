@@ -1,7 +1,7 @@
 // import Image from "next/image";
 "use client";
 
-import Header from "@/components/header/Header";
+import Header from "@/components/core/header/Header";
 
 import styles from "./page.module.css";
 
