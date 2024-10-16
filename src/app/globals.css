@@ -1,13 +1,14 @@
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+    --background: #ffffff;
+    --foreground: #171717;
 
-  --section: #EE7F7F;
+    --section: #ee7f7f;
 
-  --header-light: #F1F1F1;
-  --stroke-light: #D3D3D3;
+    --header-light: #f1f1f1;
+    --body-light: #e9e9e9;
+    --stroke-light: #d3d3d3;
 
-  font-size: 62.5%  /* 1rem = 10px */
+    font-size: 62.5%; /* 1rem = 10px */
 }
 
 /* @media (prefers-color-scheme: dark) {
@@ -19,12 +20,13 @@
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+    max-width: 100vw;
+    overflow-x: hidden;
+    background-color: var(--body-light);
 }
 
 /* body { */
-  /* color: var(--foreground);
+/* color: var(--foreground);
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
   -webkit-font-smoothing: antialiased;
@@ -32,14 +34,14 @@ body {
 /* } */
 
 * {
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+    color: inherit;
+    text-decoration: none;
 }
 
 /* @media (prefers-color-scheme: dark) {
