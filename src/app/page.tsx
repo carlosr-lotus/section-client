@@ -1,4 +1,5 @@
-import Image from "next/image";
+// import Image from "next/image";
+"use client";
 
 import Header from "@/components/header/Header";
 
@@ -10,7 +11,7 @@ export default function Home() {
       <Header />
       <main className={styles.main}>
         <h1>Main Container</h1>
-      </main> 
+      </main>
     </div>
   );
 }
