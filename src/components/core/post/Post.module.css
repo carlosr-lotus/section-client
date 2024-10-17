@@ -31,7 +31,7 @@
 }
 
 .content {
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
 
 .bottom {
@@ -54,4 +54,10 @@
 
 .bottom > .share {
     place-self: end;
+}
+
+@media (min-width: 800px) {
+    .container {
+        width: 50rem;
+    }
 }
