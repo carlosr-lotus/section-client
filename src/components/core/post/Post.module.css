@@ -1,0 +1,53 @@
+.container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 1.2rem;
+
+    background-color: var(--post-background);
+    border-radius: 1rem;
+
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.5);
+
+    display: grid;
+    gap: 1rem;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: repeat(3, max-content);
+    gap: 0.5rem;
+
+    color: var(--post-title);
+    font-size: 1.4rem;
+}
+
+.tag {
+    width: fit-content;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    background-color: var(--post-tag-color);
+    color: var(--post-bottom-icons);
+}
+
+.content {
+    font-size: 1.3rem;
+}
+
+.bottom {
+    display: grid;
+    grid-template-columns: max-content max-content 1fr;
+    gap: 1rem;
+}
+
+.bottom > div {
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 0.5rem;
+    background-color: var(--section);
+    color: var(--post-bottom-icons);
+}
+
+.bottom > .share {
+    place-self: end;
+}
