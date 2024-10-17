@@ -46,6 +46,7 @@ export default function Home() {
               postedDate={post.postedDate}
               title={post.title}
               content={post.content}
+              tag={post.tag}
             />
           ))
         ) : (
