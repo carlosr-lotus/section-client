@@ -1,33 +1,31 @@
 import styles from "./Post.module.css";
 
-// type Tag = {
-//   label: string;
-//   color: string;
-// };
+type Tag = {
+  label: string;
+  color: string;
+};
 
-// type Props = {
-//   sub: string;
-//   username: string;
-//   postedDate: string;
-//   title: string;
-//   content: string;
-//   tag?: Tag;
-// };
+export type Props = {
+  key: number;
+  sub: string;
+  username: string;
+  postedDate: string;
+  title: string;
+  content: string;
+  tag?: Tag;
+};
 
-export default function Post(): JSX.Element {
+export default function Post(props: Props): JSX.Element {
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <strong>/cooking &#9679;</strong>
-        <span>u/beginner &#9679;</span>
-        <span>1d</span>
+        <strong>{props.sub} &#9679;</strong>
+        <span>{props.username} &#9679;</span>
+        <span>{props.postedDate}</span>
       </div>
-      <h1 className={styles.title}>I tried to make a chocolate cake.</h1>
-      <span className={styles.tag}>Kitchen Help</span>
-      <section className={styles.content}>
-        I tried to make a chocolate cake today and then suddenly this
-        happened...
-      </section>
+      <h1 className={styles.title}>{props.title}</h1>
+      {props.tag && <span className={styles.tag}>Kitchen Help</span>}
+      <section className={styles.content}>{props.content}</section>
       <hr />
       <div className={styles.bottom}>
         <div>
