@@ -42,10 +42,14 @@
 
 .bottom > div {
     padding: 1rem;
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     border-radius: 0.5rem;
     background-color: var(--section);
     color: var(--post-bottom-icons);
+
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
 }
 
 .bottom > .share {
