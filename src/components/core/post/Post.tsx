@@ -24,7 +24,14 @@ export default function Post(props: Props): JSX.Element {
         <span>{props.postedDate}</span>
       </div>
       <h1 className={styles.title}>{props.title}</h1>
-      {props.tag && <span className={styles.tag}>Kitchen Help</span>}
+      {props.tag && (
+        <span
+          className={styles.tag}
+          style={{ backgroundColor: props.tag.color }}
+        >
+          {props.tag.label}
+        </span>
+      )}
       <section className={styles.content}>{props.content}</section>
       <hr />
       <div className={styles.bottom}>
