@@ -7,6 +7,12 @@
     --header-light: #f1f1f1;
     --body-light: #e9e9e9;
     --stroke-light: #d3d3d3;
+    --background-button-light: #d3d3d3;
+
+    --post-background: #f6f6f6;
+    --post-title: #464646;
+    --post-bottom-icons: #fff;
+    --post-tag-color: #7979f4;
 
     font-size: 62.5%; /* 1rem = 10px */
 }
