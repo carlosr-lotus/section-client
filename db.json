@@ -1,0 +1,44 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "sub": "s/cooking",
+      "username": "u/tester_main",
+      "postedDate": "2d",
+      "title": "Trying something new...",
+      "content": "Morbi commodo elit quis fringilla congue. Cras porta tincidunt magna eu tincidunt. Aenean blandit tristique quam, nec efficitur neque pulvinar ut."
+    },
+    {
+      "id": 2,
+      "sub": "s/cooking",
+      "username": "u/tester_main",
+      "postedDate": "2d",
+      "title": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pretium ultricies tristique. Suspendisse nec nunc a tortor mattis scelerisque. Nam placerat elit tincidunt libero volutpat, sit amet scelerisque elit malesuada",
+      "content": "Lorem ipsum..."
+    },
+    {
+      "id": 3,
+      "sub": "s/cooking",
+      "username": "u/tester_main",
+      "postedDate": "2d",
+      "title": "Morbi commodo elit quis fringilla congue. Cras porta tincidunt magna eu tincidunt. Aenean blandit tristique quam, nec efficitur neque pulvinar ut.",
+      "content": "Lorem ipsum..."
+    },
+    {
+      "id": 4,
+      "sub": "s/cooking",
+      "username": "u/tester_main",
+      "postedDate": "2d",
+      "title": "Trying something new...",
+      "content": "Curabitur molestie accumsan felis, eu aliquet quam auctor quis. Nullam risus lacus, sagittis non nunc a, aliquam aliquam est. Fusce ante nisi, rhoncus vitae arcu non, sagittis pellentesque arcu. Curabitur tincidunt fermentum euismod."
+    },
+    {
+      "id": 5,
+      "sub": "s/cooking",
+      "username": "u/tester_main",
+      "postedDate": "2d",
+      "title": "Trying something new...",
+      "content": "Lorem ipsum..."
+    }
+  ]
+}
