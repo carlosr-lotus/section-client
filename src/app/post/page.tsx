@@ -19,11 +19,13 @@ export default function PostPage(): JSX.Element {
 
   const [post, setPost] = useState<PostT[]>([]);
 
-  const readPost = useCallback(() => {
-    api
-      .get(`/posts?id=${id}`)
-      .then((res) => setPost(res.data))
-      .catch((err) => console.log(err));
+  const readPost = useCallback(async () => {
+    try {
+      const res = await api.get(`/posts?id=${id}`);
+      setPost(res.data);
+    } catch (err) {
+      console.log("Error fetching post data: " + err);
+    }
   }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
   useEffect(() => {
