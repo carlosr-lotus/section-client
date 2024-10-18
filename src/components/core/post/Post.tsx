@@ -1,3 +1,4 @@
+import usePost from "./usePost";
 import styles from "./Post.module.css";
 
 type Tag = {
@@ -5,34 +6,42 @@ type Tag = {
   color: string;
 };
 
-export type Props = {
-  key: number;
+export type PostT = {
+  id: number;
   sub: string;
   username: string;
   postedDate: string;
+  likes: number;
+  comments: number;
   title: string;
   content: string;
   tag?: Tag;
 };
 
-export default function Post(props: Props): JSX.Element {
+type Props = {
+  post: PostT;
+};
+
+export default function Post({ post }: Props): JSX.Element {
+  const { formatNumbers } = usePost();
+
   return (
     <div className={styles.container}>
       <div className={styles.header}>
-        <strong>{props.sub} &#9679;</strong>
-        <span>{props.username} &#9679;</span>
-        <span>{props.postedDate}</span>
+        <strong>{post.sub} &#9679;</strong>
+        <span>{post.username} &#9679;</span>
+        <span>{post.postedDate}</span>
       </div>
-      <h1 className={styles.title}>{props.title}</h1>
-      {props.tag && (
+      <h1 className={styles.title}>{post.title}</h1>
+      {post.tag && (
         <span
           className={styles.tag}
-          style={{ backgroundColor: props.tag.color }}
+          style={{ backgroundColor: post.tag.color }}
         >
-          {props.tag.label}
+          {post.tag.label}
         </span>
       )}
-      <section className={styles.content}>{props.content}</section>
+      <section className={styles.content}>{post.content}</section>
       <hr />
       <div className={styles.bottom}>
         <div>
@@ -53,7 +62,7 @@ export default function Post(props: Props): JSX.Element {
               strokeLinejoin="round"
             ></path>
           </svg>
-          <span>1k</span>
+          <span>{formatNumbers(post.likes)}</span>
         </div>
         <div>
           <svg
@@ -73,9 +82,10 @@ export default function Post(props: Props): JSX.Element {
               strokeLinejoin="round"
             ></path>
           </svg>
-          <span>1.5k</span>
+          <span>{formatNumbers(post.comments)}</span>
         </div>
         <div className={styles.share}>
+          {/* <div>menu</div> */}
           <svg
             width="2rem"
             height="2rem"
