@@ -1,0 +1,6 @@
+.page {
+    padding-bottom: 2rem;
+
+    display: grid;
+    gap: 2.5rem;
+}
